@@ -7,6 +7,9 @@
     }).then(function(user) {
       console.log(user);
       window.user = user;
+      $('body').prepend(JST['application'](user));
     });
+    
+    
   })
 })();
